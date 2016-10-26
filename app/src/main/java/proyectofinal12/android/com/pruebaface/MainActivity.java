@@ -32,17 +32,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        adView = (AdView)findViewById(R.id.ad_view);
-
-        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
-        adView.loadAd(adRequest);
-
         FacebookSdk.sdkInitialize(getApplicationContext());
         cM = CallbackManager.Factory.create();
 
         getFbKeyHash("proyectofinal12.android.com.pruebaface");
 
         setContentView(R.layout.activity_main);
+
+        adView = (AdView)findViewById(R.id.ad_ViewT);
+
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+        adView.loadAd(adRequest);
 
         lB= (LoginButton)findViewById(R.id.login_facebook);
 
