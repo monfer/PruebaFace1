@@ -21,7 +21,7 @@
     <com.google.android.gms.ads.AdView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ad_view"
+        android:id="@+id/ad_ViewT"
         android:layout_centerHorizontal= "true"
         android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
